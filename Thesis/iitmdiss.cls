@@ -199,21 +199,19 @@ nohead,includefoot,footskip=0.67in]{geometry}[2018/05/13]
     \vskip 10ex%
     {\normalsize
       \if@PhD
-         {\em A THESIS }\par
-         \vskip 5ex%
+         {\em Dissertation submitted as part of fulfilment for the }\par
+         \vskip 1ex%
          \if@Synopsis
             {\normalsize \em to be submitted by \par}
          \else
-            {\normalsize \em submitted by \par}
+            {\normalsize \em M.D. (Branch- IV Microbiology) Degree examination of \par}
          \fi
-         \vskip 5ex%
-         {\bf \large\MakeUppercase{\@author}\par\par}
-         \vskip 5ex%
-         {\em for the award of the degree }\par
-         \vskip 5ex%
-         {\em of} \par
-         \vskip 5ex%
-         {\bf \large \MakeUppercase{Doctor of Philosophy}} \par
+         \vskip 1ex%
+         {\em the Tamil Nadu Dr. M.G.R. Medical University }\par
+         \vskip 1ex%
+         {\em to be held in May-2023} \par
+         \vskip 10ex%
+     
        \else
          \if@MS
             {\em A THESIS }\par
