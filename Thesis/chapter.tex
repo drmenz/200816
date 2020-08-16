@@ -1,0 +1,48 @@
+%%% This template is meant to have chapter wise document with only references
+%%% and without any clutter like title page, toc, nomenclature etc.,
+
+\documentclass[PhD]{iitmdiss}
+%\documentclass[PhD,PrntForm]{iitmdiss}
+%\documentclass[MS]{iitmdiss}
+%\documentclass[MTech]{iitmdiss}
+%\documentclass[DD]{iitmdiss}
+%\documentclass[MBA]{iitmdiss}
+%\documentclass[MSc]{iitmdiss}
+%\documentclass[BTech]{iitmdiss}
+\input{0_settings/01_packages}
+\input{0_settings/02_commands}
+
+%\usepackage[section]{placeins}
+%\usepackage{float}% 
+
+\begin{document}
+%
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set page and chapter counters to custom values
+\setcounter{page}{1}            % This starts the page number with 1
+\setcounter{chapter}{2}         % This starts chapter number as 3
+
+% A SAMPLE CHAPTER - Introduction.
+\include{C_chap/C01_chap1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Appendices.
+%\appendix
+%%% Sets the label in the table of contents to "Appendix"
+%\addtocontents{toc}{\string\let\string\chapappname\string\appendixname}
+%%% The appendices have to be included with `\input`, not `\include`
+%%% due to a bug in LaTeX, otherwise the appendices will also be
+%%% labeled "Chapter"
+%%% Right way: \input{appendix-a/appendix-a}
+%%% Obsolete way: \include{appendix-a/appendix-a}
+%\input{D_appx/D01_app1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography.
+\begin{singlespace}
+  \bibliography{refs}
+\end{singlespace}
+
+\end{document}

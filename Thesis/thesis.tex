@@ -1,0 +1,53 @@
+%% This is a complete thesis template which includes almost all the things required to prepare your thesis according to IITM formatting guidelines
+
+\documentclass[PhD]{iitmdiss}
+%\documentclass[PhD,PrntForm]{iitmdiss}
+%\documentclass[MS]{iitmdiss}
+%\documentclass[MTech]{iitmdiss}
+%\documentclass[DD]{iitmdiss}
+%\documentclass[MBA]{iitmdiss}
+%\documentclass[MSc]{iitmdiss}
+%\documentclass[BTech]{iitmdiss}
+
+\input{0_settings/01_packages}
+\input{0_settings/02_commands}
+
+\begin{document}
+\input{0_settings/03_preamble}
+
+% The main text will follow from this point so set the page numbering
+% to arabic from here on.
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A SAMPLE CHAPTER - Introduction.
+\include{C_chap/C01_chap1}
+\include{C_chap/C02_chap2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendices.
+\appendix
+%%% Sets the label in the table of contents to "Appendix"
+\addtocontents{toc}{\string\let\string\chapappname\string\appendixname}
+%%% The appendices have to be included with `\input`, not `\include`
+%%% due to a bug in LaTeX, otherwise the appendices will also be
+%%% labeled "Chapter"
+%%% Right way: \input{appendix-a/appendix-a}
+%%% Obsolete way: \include{appendix-a/appendix-a}
+\input{D_appx/D01_app1}
+\input{D_appx/D02_app2}
+%\include{D_appx/D01_app1}
+%\include{D_appx/D02_app2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography.
+\begin{singlespace}
+  \bibliography{refs}
+\end{singlespace}
+\addcontentsline{toc}{chapter}{REFERENCES}
+
+%%%%%%%%%%%%% The following sections are only required for research programmes: MS and PhD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{0_settings/04_postamble}
+
+\end{document}
