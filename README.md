@@ -1,6 +1,6 @@
 # 200816
 
-|using iitmdiss.cls to create a template for tnmgrmu
+> using iitmdiss.cls to create a template for tnmgrmu
 
 Thesis formatting editing started on 16th august 2020 using iitmdiss.cls
 
