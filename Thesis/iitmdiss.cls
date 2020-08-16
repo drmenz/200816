@@ -336,7 +336,13 @@ nohead,includefoot,footskip=0.67in]{geometry}[2018/05/13]
 	\fi
 	\fi
 
-
+   % DECLARATION
+   %
+   \def\declaration{\chapter*{\centerline{DECLARATION}}
+   	 \thispagestyle{empty}
+   %\addcontentsline{toc}{chapter}{DEDICATION}
+   }
+   
    % ACKNOWLEDGEMENTS
    %
    \def\acknowledgements{\chapter*{\centerline{ACKNOWLEDGEMENTS}}
