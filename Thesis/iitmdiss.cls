@@ -314,7 +314,7 @@ nohead,includefoot,footskip=0.67in]{geometry}[2018/05/13]
    %     comment the following lines out to get it working.
    %
    \if@PhD
-   \def\certificate{\chapter*{\centerline{THESIS CERTIFICATE}}%% A preliminary chapter
+   \def\certificate{\chapter*{\centerline{CERTIFICATE}}%% A preliminary chapter
      %\vspace*{36pt}
      %\centerline{\Large \bf THESIS CERTIFICATE}
      \vskip 15pt
